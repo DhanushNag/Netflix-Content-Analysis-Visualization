@@ -1,92 +1,84 @@
 # Netflix-Content-Analysis-Visualization
 
-📌 Overview
+## 📌 Overview
 This project uses Netflix's content dataset to perform a thorough exploratory data analysis (EDA). The dataset contains metadata about movies and TV shows available on Netflix, including type, country, cast, director, rating, genre, duration, and more.
 
 We explore how content on the platform has evolved over time, which types of shows dominate, and who the most prolific creators and actors are.
 
-🎯 Objectives
-Clean and preprocess Netflix metadata
+---
 
-Analyze trends in content addition over the years
+## 🎯 Objectives
+- Clean and preprocess Netflix metadata
+- Analyze trends in content addition over the years
+- Compare distribution between Movies and TV Shows
+- Identify top genres, countries, ratings, actors, and directors
+- Visualize genre popularity across time
 
-Compare distribution between Movies and TV Shows
+---
 
-Identify top genres, countries, ratings, actors, and directors
+## 📊 Key Visualizations & Insights
 
-Visualize genre popularity across time
+1. **Yearly Trend of Content Added**
+   - Line plot showing how many new titles were added each year.
 
-📊 Key Visualizations & Insights
-Yearly Trend of Content Added
+2. **Distribution of Content Types**
+   - Bar chart comparing the count of Movies vs TV Shows.
 
-Line plot showing how many new titles were added each year.
+3. **Top 10 Countries Producing Netflix Content**
+   - Horizontal bar chart displaying countries with the highest number of titles.
 
-Distribution of Content Types
+4. **Most Common Content Ratings**
+   - Visual representation of the top 10 content rating categories.
 
-Bar chart comparing the count of Movies vs TV Shows.
+5. **Top 10 Most Frequent Genres**
+   - Bar plot of most commonly listed genres.
 
-Top 10 Countries Producing Netflix Content
+6. **Distribution of Movie Durations**
+   - Histogram of movie lengths to understand typical runtime.
 
-Horizontal bar chart displaying countries with the highest number of titles.
+7. **Top 10 Most Frequent Directors**
+   - Bar chart of directors with the highest number of titles.
 
-Most Common Content Ratings
+8. **Top 10 Most Frequent Actors**
+   - Actor appearances across all titles aggregated and visualized.
 
-Visual representation of the top 10 content rating categories.
+9. **Genre Popularity Over Years**
+   - Exploded genre-year relationship to visualize top 5 genres by year.
 
-Top 10 Most Frequent Genres
+---
 
-Bar plot of most commonly listed genres.
+## 🛠️ Tools and Technologies Used
 
-Distribution of Movie Durations
+- **Python 3.x**
+- **Jupyter Notebook**
+- **Pandas**
+- **Matplotlib**
+- **Seaborn**
+- **Counter (collections)**
 
-Histogram of movie lengths to understand typical runtime.
+---
 
-Top 10 Most Frequent Directors
+## 🧹 Data Preprocessing Steps
 
-Bar chart of directors with the highest number of titles.
+- Standardized column names using `str.lower()` and `str.replace()`
+- Filled missing values for `country`, `rating`, `cast`, and `director`
+- Converted `date_added` to datetime format
+- Extracted `year_added` and `month_added`
+- Parsed `duration` for movies
+- Used string splitting and exploding for genre analysis
 
-Top 10 Most Frequent Actors
+---
 
-Actor appearances across all titles aggregated and visualized.
+## 📦 How to Run the Notebook
 
-Genre Popularity Over Years
+1. Clone this repository or download the notebook.
+2. Make sure `netflix_titles.csv` is in your working directory.
+3. Install required libraries:
 
-Exploded genre-year relationship to visualize top 5 genres by year.
-
-🛠️ Tools and Technologies Used
-Python 3.x
-
-Jupyter Notebook
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Counter (collections)
-
-🧹 Data Preprocessing Steps
-Standardized column names using str.lower() and str.replace()
-
-Filled missing values for country, rating, cast, and director
-
-Converted date_added to datetime format
-
-Extracted year_added and month_added
-
-Parsed duration for movies
-
-Used string splitting and exploding for genre analysis
-
-📦 How to Run the Notebook
-Clone this repository or download the notebook.
-
-Make sure netflix_titles.csv is in your working directory.
-
-Install required libraries:
+   ```bash
+   pip install pandas matplotlib seaborn
 
 
-📌 Dataset Source
-Netflix Titles Dataset - Kaggle
+
+
 
